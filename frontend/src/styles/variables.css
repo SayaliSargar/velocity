@@ -1,0 +1,129 @@
+
+:root {
+  /* ================================
+     VELOCITY — COLOR SYSTEM
+     ================================ */
+
+  --color-bg-primary: #0a0a0a;
+  --color-bg-secondary: #111111;
+  --color-bg-tertiary: #181818;
+  --color-surface: #202020;
+
+  --color-text-primary: #f5f5f2;
+  --color-text-secondary: #b7b7b2;
+  --color-text-muted: #777771;
+
+  --color-border: #2a2a2a;
+
+  --color-accent: #c8ff3d;
+  --color-accent-soft: rgba(200, 255, 61, 0.12);
+
+  /* ================================
+     TYPOGRAPHY
+     ================================ */
+
+  --font-primary:
+    Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  --font-display:
+    Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  --font-mono:
+    "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+
+  --text-display-xl: 6rem;
+  --text-display-lg: 4.5rem;
+
+  --text-heading-xl: 3.5rem;
+  --text-heading-lg: 2.75rem;
+  --text-heading-md: 2rem;
+  --text-heading-sm: 1.5rem;
+
+  --text-body-lg: 1.25rem;
+  --text-body-md: 1rem;
+  --text-body-sm: 0.875rem;
+
+  --text-label: 0.75rem;
+
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+  --weight-extrabold: 800;
+
+  --line-display: 0.98;
+  --line-heading: 1.1;
+  --line-body: 1.6;
+  --line-label: 1.3;
+
+  /* ================================
+     SPACING — 4px BASE
+     ================================ */
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+  --space-32: 8rem;
+
+  /* ================================
+     LAYOUT
+     ================================ */
+
+  --container-max: 1440px;
+
+  --container-padding-desktop: 5rem;
+  --container-padding-tablet: 3rem;
+  --container-padding-mobile: 1.25rem;
+
+  /* ================================
+     GRID
+     ================================ */
+
+  --grid-columns-desktop: 12;
+  --grid-columns-tablet: 8;
+  --grid-columns-mobile: 4;
+
+  --grid-gap: 1.5rem;
+
+  /* ================================
+     BORDERS & RADIUS
+     ================================ */
+
+  --border-width: 1px;
+
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+
+  /* ================================
+     MOTION
+     ================================ */
+
+  --duration-fast: 150ms;
+  --duration-normal: 250ms;
+  --duration-medium: 400ms;
+  --duration-slow: 700ms;
+  --duration-cinematic: 1000ms;
+
+  --ease-standard: cubic-bezier(0.2, 0.65, 0.3, 1);
+  --ease-smooth: cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* ================================
+     Z-INDEX
+     ================================ */
+
+  --z-base: 0;
+  --z-content: 10;
+  --z-navigation: 100;
+  --z-overlay: 200;
+  --z-modal: 300;
+}
