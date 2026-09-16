@@ -69,6 +69,7 @@
   position: relative;
 
   min-height: 620px;
+  aspect-ratio: 16 / 10;
 
   overflow: hidden;
 
@@ -239,7 +240,7 @@
 }
 
 .featured-vehicle__spec-label {
-  color: var(--color-text-muted);
+  color: var(--color-text-secondary);
 
   font-family: var(--font-mono);
 
@@ -319,8 +320,9 @@
   }
 
   .featured-vehicle__visual {
-    min-height: 540px;
-  }
+  min-height: 540px;
+  aspect-ratio: 16 / 10;
+}
 
   .featured-vehicle__details {
     min-height: auto;
@@ -363,8 +365,9 @@
   }
 
   .featured-vehicle__visual {
-    min-height: 400px;
-  }
+  min-height: 400px;
+  aspect-ratio: 4 / 3;
+}
 
   .featured-vehicle__visual-index {
     left: 20px;
@@ -414,6 +417,7 @@
 @media (max-width: 380px) {
   .featured-vehicle__visual {
     min-height: 340px;
+    aspect-ratio: 4 / 3;
   }
 
   .featured-vehicle__heading h2 {

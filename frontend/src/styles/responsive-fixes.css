@@ -1,0 +1,1250 @@
+/* =========================================================
+   VELOCITY — RESPONSIVE FIX LAYER
+   Clean responsive system
+   ========================================================= */
+
+
+/* =========================================================
+   1. GLOBAL RESPONSIVE SAFETY
+   ========================================================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  min-width: 0;
+  overflow-x: hidden;
+}
+
+img,
+svg,
+video,
+canvas {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+a,
+input,
+textarea,
+select {
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: normal;
+  word-break: normal;
+  hyphens: none;
+}
+
+p {
+  overflow-wrap: break-word;
+  word-break: normal;
+  hyphens: none;
+}
+
+
+/* =========================================================
+   2. GLOBAL CONTAINER SAFETY
+   ========================================================= */
+
+.hero__container,
+.featured-vehicle__container,
+.performance__container,
+.design-story__container,
+.technology__container,
+.collection__container,
+.gallery__container,
+.final-cta__container {
+  width: min(100% - 48px, 1440px);
+  max-width: 1440px;
+  min-width: 0;
+  margin-inline: auto;
+}
+
+
+/* =========================================================
+   3. FLUID TYPOGRAPHY
+   ========================================================= */
+
+.hero h1 {
+  font-size: clamp(3.25rem, 7.2vw, 6rem);
+  line-height: 0.9;
+  letter-spacing: -0.045em;
+  max-width: 100%;
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
+.hero p {
+  max-width: min(100%, 46rem);
+}
+
+
+/* ---------- Featured Vehicle ---------- */
+
+.featured-vehicle h2 {
+  font-size: clamp(2.75rem, 5.5vw, 5rem);
+  line-height: 0.92;
+  letter-spacing: -0.04em;
+}
+
+.featured-vehicle h3 {
+  font-size: clamp(1.5rem, 2.5vw, 2.25rem);
+}
+
+
+/* ---------- Performance ---------- */
+
+.performance h2 {
+  font-size: clamp(2.75rem, 5.8vw, 5rem);
+  line-height: 0.92;
+  letter-spacing: -0.045em;
+}
+
+.performance h3 {
+  font-size: clamp(1.75rem, 3vw, 3rem);
+}
+
+
+/* ---------- Design ---------- */
+
+.design-story h2 {
+  font-size: clamp(2.75rem, 6vw, 5.5rem);
+  line-height: 0.9;
+  letter-spacing: -0.045em;
+}
+
+.design-story h3 {
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+
+/* ---------- Technology ---------- */
+
+.technology h2 {
+  font-size: clamp(2.75rem, 5.8vw, 5rem);
+  line-height: 0.92;
+  letter-spacing: -0.045em;
+}
+
+.technology h3 {
+  font-size: clamp(1.75rem, 3vw, 3rem);
+}
+
+
+/* ---------- Collection ---------- */
+
+.collection h2 {
+  font-size: clamp(2.75rem, 5.8vw, 5rem);
+  line-height: 0.92;
+  letter-spacing: -0.045em;
+}
+
+.collection h3 {
+  font-size: clamp(1.75rem, 3vw, 3rem);
+}
+
+
+/* ---------- Gallery ---------- */
+
+.gallery h2 {
+  font-size: clamp(2.75rem, 6vw, 5.5rem);
+  line-height: 0.9;
+  letter-spacing: -0.045em;
+}
+
+.gallery h3 {
+  font-size: clamp(1.15rem, 2vw, 1.75rem);
+}
+
+
+/* ---------- Final CTA ---------- */
+
+.final-cta h2 {
+  font-size: clamp(3.5rem, 9vw, 8rem);
+  line-height: 0.84;
+  letter-spacing: -0.055em;
+}
+
+
+/* =========================================================
+   4. HERO
+   ========================================================= */
+
+.hero {
+  width: 100%;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.hero__container {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 0;
+}
+
+.hero__content {
+  min-width: 0;
+  width: min(100%, 900px);
+}
+
+.hero__content h1 {
+  max-width: 100%;
+}
+
+.hero__content p {
+  max-width: 48rem;
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.hero__actions > * {
+  min-width: 0;
+}
+
+.hero__metrics {
+  min-width: 0;
+}
+
+.hero__metric {
+  min-width: 0;
+}
+
+.hero__metric-value,
+.hero__metric-label {
+  overflow-wrap: break-word;
+}
+
+
+/* =========================================================
+   5. FEATURED VEHICLE
+   ========================================================= */
+
+.featured-vehicle {
+  width: 100%;
+  overflow: hidden;
+}
+
+.featured-vehicle__container,
+.featured-vehicle__content,
+.featured-vehicle__visual,
+.featured-vehicle__details {
+  min-width: 0;
+}
+
+.featured-vehicle__visual {
+  overflow: hidden;
+}
+
+.featured-vehicle__visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.featured-vehicle__details h2,
+.featured-vehicle__details h3,
+.featured-vehicle__details p {
+  max-width: 100%;
+}
+
+.featured-vehicle__stats {
+  min-width: 0;
+}
+
+.featured-vehicle__stat {
+  min-width: 0;
+}
+
+
+/* =========================================================
+   6. PERFORMANCE
+   ========================================================= */
+
+.performance {
+  width: 100%;
+  overflow: hidden;
+}
+
+.performance__container,
+.performance__content,
+.performance__visual,
+.performance__specs {
+  min-width: 0;
+}
+
+.performance__spec {
+  min-width: 0;
+}
+
+.performance__spec-label,
+.performance__spec-value {
+  min-width: 0;
+  overflow-wrap: break-word;
+}
+
+.performance__spec-value {
+  white-space: nowrap;
+}
+
+
+/* ---------- Mobile Performance Specifications ---------- */
+
+@media (max-width: 767px) {
+
+  .performance__spec {
+    display: grid;
+    grid-template-columns: 2rem minmax(0, 1fr) auto;
+    align-items: center;
+    column-gap: 12px;
+  }
+
+  .performance__spec-index {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .performance__spec-label {
+    grid-column: 2;
+    grid-row: 1;
+    min-width: 0;
+  }
+
+  .performance__spec-value {
+    grid-column: 3;
+    grid-row: 1;
+    margin-top: 0;
+    text-align: right;
+    justify-self: end;
+  }
+}
+
+
+/* =========================================================
+   7. DESIGN STORY
+   ========================================================= */
+
+.design-story {
+  width: 100%;
+  overflow: hidden;
+}
+
+.design-story__container,
+.design-story__content,
+.design-story__visual,
+.design-story__text {
+  min-width: 0;
+}
+
+.design-story img {
+  max-width: 100%;
+}
+
+.design-story h2,
+.design-story h3,
+.design-story p {
+  max-width: 100%;
+}
+
+
+/* =========================================================
+   8. TECHNOLOGY
+   ========================================================= */
+
+.technology {
+  width: 100%;
+  overflow: hidden;
+}
+
+.technology__container {
+  min-width: 0;
+}
+
+.technology__content,
+.technology__visual,
+.technology__statement,
+.technology__copy {
+  min-width: 0;
+}
+
+.technology__statement {
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
+.technology__statement h3,
+.technology__statement p {
+  max-width: 100%;
+}
+
+
+/* ---------- Desktop ---------- */
+
+@media (min-width: 1200px) {
+
+  .technology__container {
+    grid-template-columns:
+      minmax(0, 1.6fr)
+      minmax(0, 1fr);
+  }
+}
+
+
+/* ---------- Laptop ---------- */
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+
+  .technology__container {
+    grid-template-columns:
+      minmax(0, 1.35fr)
+      minmax(0, 1fr);
+  }
+}
+
+
+/* =========================================================
+   9. COLLECTION
+   ========================================================= */
+
+.collection {
+  width: 100%;
+  overflow: hidden;
+}
+
+.collection__container,
+.collection__featured,
+.collection__featured-content,
+.collection__featured-visual,
+.collection__models {
+  min-width: 0;
+}
+
+.collection__featured-visual {
+  overflow: hidden;
+}
+
+.collection img {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.collection h2,
+.collection h3,
+.collection p {
+  max-width: 100%;
+}
+
+.collection__stats {
+  min-width: 0;
+}
+
+.collection__stat {
+  min-width: 0;
+}
+
+
+/* =========================================================
+   10. GALLERY
+   ========================================================= */
+
+.gallery {
+  width: 100%;
+  overflow: hidden;
+}
+
+.gallery__container,
+.gallery__header,
+.gallery__heading,
+.gallery__grid,
+.gallery-item,
+.gallery-item__visual {
+  min-width: 0;
+}
+
+.gallery-item {
+  overflow: hidden;
+}
+
+.gallery-item__visual {
+  position: relative;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.gallery-item__top,
+.gallery-item__bottom {
+  min-width: 0;
+}
+
+.gallery-item__bottom h3 {
+  min-width: 0;
+  max-width: calc(100% - 48px);
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
+.gallery__footer {
+  min-width: 0;
+}
+
+.gallery__footer-left,
+.gallery__footer-right {
+  min-width: 0;
+}
+
+.gallery__footer span {
+  overflow-wrap: break-word;
+}
+
+
+/* =========================================================
+   11. FINAL CTA
+   ========================================================= */
+
+.final-cta {
+  width: 100%;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.final-cta__container,
+.final-cta__content,
+.final-cta__footer {
+  min-width: 0;
+}
+
+.final-cta__content {
+  width: min(100%, 1000px);
+}
+
+.final-cta h2 {
+  max-width: 100%;
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
+.final-cta__description {
+  max-width: min(100%, 44rem);
+}
+
+.final-cta__button {
+  max-width: 100%;
+}
+
+.final-cta__footer > * {
+  min-width: 0;
+}
+
+
+/* =========================================================
+   12. TABLET
+   768px — 1023px
+   ========================================================= */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+  .hero__container,
+  .featured-vehicle__container,
+  .performance__container,
+  .design-story__container,
+  .technology__container,
+  .collection__container,
+  .gallery__container,
+  .final-cta__container {
+    width: min(100% - 64px, 900px);
+  }
+
+  .hero__content {
+    width: 100%;
+  }
+
+  .hero__metrics {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+  }
+
+  .featured-vehicle__container {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .performance__container {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .design-story__container {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .technology__container {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 48px;
+  }
+
+  .collection__featured {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .gallery__header {
+    grid-template-columns: 120px minmax(0, 1fr);
+  }
+
+  .gallery__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .gallery-item--large,
+  .gallery-item--wide {
+    grid-column: span 2;
+  }
+
+  .final-cta__footer {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+
+
+/* =========================================================
+   13. MOBILE
+   < 768px
+   ========================================================= */
+
+@media (max-width: 767px) {
+
+  .hero__container,
+  .featured-vehicle__container,
+  .performance__container,
+  .design-story__container,
+  .technology__container,
+  .collection__container,
+  .gallery__container,
+  .final-cta__container {
+    width: calc(100% - 40px);
+  }
+
+
+  /* -------------------------------------------------------
+     MOBILE TYPOGRAPHY
+     ------------------------------------------------------- */
+
+  .hero h1 {
+    font-size: clamp(2.55rem, 12.5vw, 4.2rem);
+    line-height: 0.96;
+    letter-spacing: -0.02em;
+
+    max-width: 100%;
+    width: 100%;
+
+    overflow: visible;
+    overflow-wrap: normal;
+    word-break: normal;
+    hyphens: none;
+  }
+
+  .featured-vehicle h2,
+  .performance h2,
+  .design-story h2,
+  .technology h2,
+  .collection h2,
+  .gallery h2 {
+
+    font-size: clamp(2.05rem, 9.8vw, 3.8rem);
+    line-height: 0.99;
+    letter-spacing: -0.018em;
+
+    max-width: 100%;
+    width: 100%;
+
+    overflow: visible;
+    overflow-wrap: normal;
+    word-break: normal;
+    hyphens: none;
+  }
+
+  .featured-vehicle h3,
+  .performance h3,
+  .design-story h3,
+  .technology h3,
+  .collection h3 {
+
+    font-size: clamp(1.3rem, 6.5vw, 2.25rem);
+    line-height: 1.06;
+    letter-spacing: -0.01em;
+
+    max-width: 100%;
+
+    overflow: visible;
+    overflow-wrap: normal;
+    word-break: normal;
+    hyphens: none;
+  }
+
+  .gallery h3 {
+    font-size: clamp(1.1rem, 5vw, 1.5rem);
+    line-height: 1.06;
+
+    max-width: 100%;
+
+    overflow: visible;
+    overflow-wrap: normal;
+    word-break: normal;
+  }
+
+  .final-cta h2 {
+    font-size: clamp(2.65rem, 13vw, 5rem);
+    line-height: 0.95;
+    letter-spacing: -0.02em;
+
+    max-width: 100%;
+    width: 100%;
+
+    overflow: visible;
+    overflow-wrap: normal;
+    word-break: normal;
+    hyphens: none;
+  }
+
+
+  /* -------------------------------------------------------
+     MOBILE TEXT SAFETY
+     ------------------------------------------------------- */
+
+  .hero p,
+  .featured-vehicle p,
+  .performance p,
+  .design-story p,
+  .technology p,
+  .collection p,
+  .gallery p,
+  .final-cta p {
+    max-width: 100%;
+    overflow: visible;
+    overflow-wrap: break-word;
+    word-break: normal;
+    hyphens: none;
+  }
+
+
+  /* -------------------------------------------------------
+     HERO
+     ------------------------------------------------------- */
+
+  .hero__container {
+    min-height: 100svh;
+    padding-top: 96px;
+    padding-bottom: 40px;
+    justify-content: center;
+  }
+
+  .hero__content {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .hero__actions {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .hero__actions > * {
+    width: 100%;
+  }
+
+  .hero__metrics {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px 16px;
+  }
+
+  .hero__metric:last-child {
+    grid-column: span 2;
+  }
+
+
+  /* -------------------------------------------------------
+     FEATURED VEHICLE
+     ------------------------------------------------------- */
+
+  .featured-vehicle__container {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .featured-vehicle__visual {
+    min-height: 0;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+  }
+
+  .featured-vehicle__visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
+
+  .featured-vehicle__details {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .featured-vehicle__stats {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px 16px;
+  }
+
+
+  /* -------------------------------------------------------
+     PERFORMANCE
+     ------------------------------------------------------- */
+
+  .performance__container {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .performance__visual {
+    min-height: 320px;
+  }
+
+  .performance__specs {
+    width: 100%;
+  }
+
+  .performance__spec-value {
+    white-space: normal;
+  }
+
+
+  /* -------------------------------------------------------
+     DESIGN
+     ------------------------------------------------------- */
+
+  .design-story__container {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .design-story__visual {
+    min-height: 360px;
+  }
+
+  .design-story__content,
+  .design-story__text {
+    min-width: 0;
+  }
+
+
+  /* -------------------------------------------------------
+     TECHNOLOGY
+     ------------------------------------------------------- */
+
+  .technology__container {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 40px;
+  }
+
+  .technology__visual {
+    min-height: 320px;
+  }
+
+  .technology__statement,
+  .technology__copy {
+    width: 100%;
+    min-width: 0;
+
+    overflow: visible;
+  }
+
+
+  /* -------------------------------------------------------
+     COLLECTION
+     ------------------------------------------------------- */
+
+  .collection__featured {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .collection__featured-visual {
+    min-height: 0;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+  }
+
+  .collection__featured-visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
+
+  .collection__stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .collection__models {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+
+  /* -------------------------------------------------------
+     GALLERY
+     ------------------------------------------------------- */
+
+  .gallery__header {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+  }
+
+  .gallery__grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .gallery-item--large,
+  .gallery-item--small,
+  .gallery-item--wide {
+    grid-column: auto;
+  }
+
+  .gallery-item {
+    min-height: 0;
+    aspect-ratio: 4 / 3;
+  }
+
+  .gallery-item__visual {
+    width: 100%;
+    height: 100%;
+  }
+
+  .gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
+
+  .gallery__footer {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+  }
+
+
+  /* -------------------------------------------------------
+     FINAL CTA
+     ------------------------------------------------------- */
+
+  .final-cta__container {
+    min-height: 100svh;
+  }
+
+  .final-cta__footer {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+  }
+
+  .final-cta__footer-center {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 20px;
+  }
+}
+
+
+/* =========================================================
+   14. SMALL MOBILE
+   <= 420px
+   ========================================================= */
+
+@media (max-width: 420px) {
+
+  .hero__container,
+  .featured-vehicle__container,
+  .performance__container,
+  .design-story__container,
+  .technology__container,
+  .collection__container,
+  .gallery__container,
+  .final-cta__container {
+    width: calc(100% - 32px);
+  }
+
+
+  /* ---------- Typography ---------- */
+
+  .hero h1 {
+    font-size: clamp(2.45rem, 12.2vw, 3.7rem);
+    line-height: 0.97;
+    letter-spacing: -0.018em;
+  }
+
+  .featured-vehicle h2,
+  .performance h2,
+  .design-story h2,
+  .technology h2,
+  .collection h2,
+  .gallery h2 {
+
+    font-size: clamp(2rem, 9.4vw, 3.4rem);
+    line-height: 1;
+    letter-spacing: -0.015em;
+  }
+
+  .featured-vehicle h3,
+  .performance h3,
+  .design-story h3,
+  .technology h3,
+  .collection h3 {
+
+    font-size: clamp(1.28rem, 6.1vw, 2rem);
+    line-height: 1.07;
+    letter-spacing: -0.008em;
+  }
+
+  .gallery h3 {
+    font-size: clamp(1.05rem, 5vw, 1.4rem);
+    line-height: 1.07;
+  }
+
+  .final-cta h2 {
+    font-size: clamp(2.55rem, 13vw, 4.4rem);
+    line-height: 0.97;
+    letter-spacing: -0.018em;
+  }
+
+
+  /* ---------- Hero ---------- */
+
+  .hero__metrics {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .hero__metric:last-child {
+    grid-column: auto;
+  }
+
+
+  /* ---------- Featured Vehicle ---------- */
+
+  .featured-vehicle__stats {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .featured-vehicle__visual {
+    aspect-ratio: 4 / 3;
+  }
+
+
+  /* ---------- Performance ---------- */
+
+  .performance__spec {
+    grid-template-columns: 1.75rem minmax(0, 1fr) auto;
+    column-gap: 8px;
+  }
+
+  .performance__spec-value {
+    font-size: 0.95rem;
+    white-space: normal;
+  }
+
+
+  /* ---------- Collection ---------- */
+
+  .collection__stats {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .collection__featured-visual {
+    aspect-ratio: 4 / 3;
+  }
+
+
+  /* ---------- Gallery ---------- */
+
+  .gallery-item {
+    aspect-ratio: 4 / 3;
+  }
+}
+
+
+/* =========================================================
+   15. VERY SMALL DEVICES
+   <= 360px
+   ========================================================= */
+
+@media (max-width: 360px) {
+
+  .hero__container,
+  .featured-vehicle__container,
+  .performance__container,
+  .design-story__container,
+  .technology__container,
+  .collection__container,
+  .gallery__container,
+  .final-cta__container {
+    width: calc(100% - 28px);
+  }
+
+
+  /* ---------- Typography ---------- */
+
+  .hero h1 {
+    font-size: 2.4rem;
+    line-height: 0.98;
+    letter-spacing: -0.015em;
+  }
+
+  .featured-vehicle h2,
+  .performance h2,
+  .design-story h2,
+  .technology h2,
+  .collection h2,
+  .gallery h2 {
+
+    font-size: 2rem;
+    line-height: 1;
+    letter-spacing: -0.012em;
+  }
+
+  .featured-vehicle h3,
+  .performance h3,
+  .design-story h3,
+  .technology h3,
+  .collection h3 {
+
+    font-size: 1.28rem;
+    line-height: 1.07;
+    letter-spacing: -0.006em;
+  }
+
+  .final-cta h2 {
+    font-size: 2.5rem;
+    line-height: 0.98;
+    letter-spacing: -0.015em;
+  }
+
+
+  /* ---------- Performance ---------- */
+
+  .performance__spec {
+    grid-template-columns: 1.5rem minmax(0, 1fr);
+  }
+
+  .performance__spec-value {
+    grid-column: 2;
+    grid-row: 2;
+
+    justify-self: start;
+    margin-top: 4px;
+
+    text-align: left;
+    white-space: normal;
+  }
+
+
+  /* ---------- Images ---------- */
+
+  .featured-vehicle__visual {
+    aspect-ratio: 4 / 3;
+  }
+
+  .collection__featured-visual {
+    aspect-ratio: 4 / 3;
+  }
+
+  .gallery-item {
+    aspect-ratio: 4 / 3;
+  }
+}
+
+
+/* =========================================================
+   16. LANDSCAPE MOBILE
+   ========================================================= */
+
+@media (max-width: 767px) and (orientation: landscape) {
+
+  .hero__container,
+  .final-cta__container {
+    min-height: auto;
+    padding-top: 110px;
+    padding-bottom: 64px;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.4rem, 8.5vw, 4.2rem);
+    line-height: 0.95;
+    letter-spacing: -0.02em;
+    max-width: 100%;
+  }
+}
+
+
+/* =========================================================
+   17. REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .hero img,
+  .featured-vehicle img,
+  .design-story img,
+  .technology img,
+  .collection img,
+  .gallery-item img {
+    transform: none !important;
+  }
+}
